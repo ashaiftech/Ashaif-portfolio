@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080610;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0d0918;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #24153b;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c084fc;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: slideLeft 1s ease;
+}
+
+.welcome {
+    color: #c084fc;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a855f7;
+}
+
+.hero h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #c084fc;
+}
+
+.hero-description {
+    color: #c7bdd8;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #8b3dce;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: 1px solid #a855f7;
+}
+
+.btn:hover {
+    background: #a855f7;
+    box-shadow: 0 0 20px #a855f7;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+}
+
+.hero-image img {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #a855f7;
+    box-shadow: 0 0 35px #8b3dce;
+    animation: float 4s ease-in-out infinite;
+}
+
+.section {
+    padding: 90px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: #a855f7;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image img {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 25px #54217e;
+}
+
+.about-text h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #c084fc;
+}
+
+.about-text p {
+    color: #c7bdd8;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-text .btn {
+    margin-top: 15px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 35px 20px;
+    text-align: center;
+    background: #120c20;
+    border: 1px solid #48236c;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #6b2ca0;
+    border-color: #a855f7;
+}
+
+.skill-card h3 {
+    color: #c084fc;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #b9adc9;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #120c20;
+    border: 1px solid #48236c;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #6b2ca0;
+}
+
+.project-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: #c084fc;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #c7bdd8;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    color: #c084fc;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: white;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.certificate-card {
+    padding: 25px;
+    text-align: center;
+    background: #120c20;
+    border: 1px solid #8b3dce;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #8b3dce;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background: #080610;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.certificate-card h3 {
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+.certificate-card p {
+    color: #c7bdd8;
+}
+
+.contact-box {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px;
+    text-align: center;
+    background: #120c20;
+    border: 1px solid #6b2ca0;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #301449;
+}
+
+.contact-box h3 {
+    font-size: 26px;
+    color: #c084fc;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    color: #c7bdd8;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d0918;
+    color: #a99bb9;
+    border-top: 1px solid #24153b;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container,
+    .projects-container,
+    .certificates-container {
+        grid-template-columns: 1fr;
+    }
+}
