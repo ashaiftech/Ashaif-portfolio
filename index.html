@@ -1,334 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mohd Ashaif | AI & DS Student</title>
+    <title>Mohd Ashaif | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+<div class="scroll-progress" id="scrollProgress"></div>
 
-    <header>
-        <nav class="navbar">
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
 
-            <h2 class="logo">ASHAIF<span>.</span></h2>
+        <a href="#home" class="logo">ASHAIF<span>.</span></a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
-        </nav>
-    </header>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
+        <a href="#contact" class="nav-button">Let's Talk ↗</a>
 
-    <!-- HOME SECTION -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
-
-            <h1>Hi, I'm <span>Mohd Ashaif</span></h1>
-
-            <h2>I'm a <span id="typing"></span></h2>
-
-            <p class="hero-description">
-                BCA Artificial Intelligence & Data Science student
-                passionate about technology, coding and building
-                creative digital experiences.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    Explore My Work
-                </a>
-
-                <a href="#contact" class="btn btn-outline">
-                    Contact Me
-                </a>
-
-                <a href="Mohd_Ashaif_CV_Updated.pdf"
-                   download class="btn">
-                    Download My CV
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="images/profile.jpg" alt="Mohd Ashaif">
-
-        </div>
-
-    </section>
+    </nav>
+</header>
 
 
-    <!-- ABOUT SECTION -->
+<!-- HERO -->
+<section class="hero section" id="home">
 
-    <section id="about" class="section">
+    <div class="hero-content reveal">
 
-        <h2 class="section-title">
-            About <span>Me</span>
+        <p class="small-heading">✦ HELLO, I'M MOHD ASHAIF</p>
+
+        <h1>
+            I DON'T JUST WRITE CODE.<br>
+            <span>I BUILD WHAT'S NEXT.</span>
+        </h1>
+
+        <h2>
+            I'm a <span id="typing"></span><span class="cursor">|</span>
         </h2>
 
-        <div class="about-container">
-
-            <div class="about-image">
-
-                <img src="images/about.jpg" alt="Mohd Ashaif">
-
-            </div>
-
-            <div class="about-text">
-
-                <h3>Exploring the World of Technology</h3>
-
-                <p>
-                    Hello! I'm Mohd Ashaif, a BCA Artificial Intelligence
-                    and Data Science student at Dev Bhoomi Uttarakhand
-                    University.
-                </p>
-
-                <p>
-                    I enjoy learning programming, exploring artificial
-                    intelligence and creating projects that help me
-                    improve my technical skills.
-                </p>
-
-                <p>
-                    My goal is to keep learning, build meaningful projects
-                    and grow as a technology professional.
-                </p>
-
-                <a href="#contact" class="btn">
-                    Let's Connect
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS SECTION -->
-
-    <section id="skills" class="section">
-
-        <h2 class="section-title">
-            My <span>Skills</span>
-        </h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Web Structure</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Web Designing</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Web Interactivity</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>C</h3>
-                <p>Programming Basics</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>AI & DS</h3>
-                <p>Artificial Intelligence</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS SECTION -->
-
-    <section id="projects" class="section">
-
-        <h2 class="section-title">
-            My <span>Projects</span>
-        </h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-
-                <div class="project-icon">🤖</div>
-
-                <h3>AERIS AI</h3>
-
-                <p>
-                    A personal AI assistant project designed to explore
-                    voice interaction and smart assistance.
-                </p>
-
-                <a href="https://github.com/ashaiftech/AERIS"
-                   target="_blank" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-icon">🎮</div>
-
-                <h3>Space Shooter Game</h3>
-
-                <p>
-                    A Python-based space shooter game created as
-                    a programming project.
-                </p>
-
-                <a href="https://github.com/ashaiftech/-Space-Shooter-Game"
-                   target="_blank" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-icon">🌐</div>
-
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    My personal portfolio website to showcase my
-                    skills, projects and learning journey.
-                </p>
-
-                <a href="https://github.com/ashaiftech"
-                   target="_blank" class="project-link">
-                    My GitHub →
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CERTIFICATES SECTION -->
-
-    <section id="certificates" class="section">
-
-        <h2 class="section-title">
-            My <span>Certificates</span>
-        </h2>
-
-        <div class="certificates-container">
-
-            <div class="certificate-card">
-
-                <img src="images/certificate1.jpg"
-                     alt="First Certificate">
-
-                <h3>Certificate 01</h3>
-
-                <p>My Learning Achievement</p>
-
-            </div>
-
-
-            <div class="certificate-card">
-
-                <img src="images/certificate2.jpg"
-                     alt="Second Certificate">
-
-                <h3>Certificate 02</h3>
-
-                <p>My Learning Achievement</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT SECTION -->
-
-    <section id="contact" class="section">
-
-        <h2 class="section-title">
-            Contact <span>Me</span>
-        </h2>
-
-        <div class="contact-box">
-
-            <h3>Let's Build Something Great!</h3>
-
-            <p>
-                Interested in my work or want to connect?
-                You can contact me through email or GitHub.
-            </p>
-
-            <a href="mailto:ashaifkhan515@gmail.com"
-               class="btn">
-                Send Me an Email
-            </a>
-
-            <br><br>
-
-            <a href="https://github.com/ashaiftech"
-               target="_blank" class="btn btn-outline">
-                Visit My GitHub
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <p>
-            © 2026 Mohd Ashaif | Designed & Built by Me
+        <p class="hero-description">
+            Exploring the world of Artificial Intelligence,
+            Data Science and Technology. Turning ideas into
+            meaningful digital experiences.
         </p>
 
-    </footer>
+        <div class="hero-buttons">
+
+            <a href="#projects" class="gold-button">
+                Explore My Work ↗
+            </a>
+
+            <a href="Mohd_Ashaif_CV_Updated.pdf"
+               download class="outline-button">
+                Download CV ↓
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <h3>03+</h3>
+                <p>Projects</p>
+            </div>
+
+            <div>
+                <h3>06+</h3>
+                <p>Tech Skills</p>
+            </div>
+
+            <div>
+                <h3>100%</h3>
+                <p>Curiosity</p>
+            </div>
+
+        </div>
+
+    </div>
 
 
-    <!-- JAVASCRIPT -->
+    <div class="hero-image reveal">
 
-    <script src="script.js"></script>
+        <div class="image-decoration"></div>
+
+        <div class="image-frame tilt-card">
+            <img src="images/profile.jpg" alt="Mohd Ashaif">
+        </div>
+
+        <div class="floating-card">
+            <span>✦</span> AI & DS Student
+        </div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+
+    <div class="section-heading reveal">
+        <p>GET TO KNOW ME</p>
+        <h2>About <span>Me.</span></h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image reveal tilt-card">
+            <img src="images/about.jpg" alt="About Ashaif">
+        </div>
+
+        <div class="about-content reveal">
+
+            <h3>
+                Building my journey,
+                <span>one line of code at a time.</span>
+            </h3>
+
+            <p>
+                Hello! I'm Mohd Ashaif, a BCA student
+                specializing in Artificial Intelligence
+                and Data Science at Dev Bhoomi Uttarakhand
+                University.
+            </p>
+
+            <p>
+                I'm passionate about programming,
+                technology and creating projects that
+                solve real-world problems.
+            </p>
+
+            <p>
+                My goal is to keep learning, building
+                and growing as a developer.
+            </p>
+
+            <div class="about-details">
+
+                <div>
+                    <span>Name</span>
+                    <strong>Mohd Ashaif</strong>
+                </div>
+
+                <div>
+                    <span>Education</span>
+                    <strong>BCA - AI & DS</strong>
+                </div>
+
+                <div>
+                    <span>University</span>
+                    <strong>DBUU</strong>
+                </div>
+
+                <div>
+                    <span>Interest</span>
+                    <strong>AI & Development</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section class="skills section" id="skills">
+
+    <div class="section-heading reveal">
+        <p>WHAT I WORK WITH</p>
+        <h2>My <span>Skills.</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML</h3>
+            <p>Web Structure</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Web Designing</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Interactive Websites</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Programming</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">💻</div>
+            <h3>C Language</h3>
+            <p>Programming Basics</p>
+        </div>
+
+        <div class="skill-card reveal">
+            <div class="skill-icon">🤖</div>
+            <h3>AI & DS</h3>
+            <p>Artificial Intelligence</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section class="projects section" id="projects">
+
+    <div class="section-heading reveal">
+        <p>MY RECENT WORK</p>
+        <h2>Selected <span>Works.</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+            <div class="project-number">01</div>
+            <div class="project-icon">🤖</div>
+
+            <h3>AERIS AI</h3>
+
+            <p>
+                An AI-powered personal assistant project
+                designed to make digital interactions
+                smarter and easier.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>AI</span>
+                <span>Ollama</span>
+            </div>
+
+            <a href="https://github.com/ashaiftech/AERIS"
+               target="_blank">View Project ↗</a>
+        </div>
+
+
+        <div class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-icon">🚀</div>
+
+            <h3>Space Shooter Game</h3>
+
+            <p>
+                A Python-based space shooter game
+                featuring player controls, obstacles
+                and interactive gameplay.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Game Dev</span>
+            </div>
+
+            <a href="https://github.com/ashaiftech/-Space-Shooter-Game"
+               target="_blank">View Project ↗</a>
+        </div>
+
+
+        <div class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-icon">💻</div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                My personal portfolio website showcasing
+                my skills, projects, achievements
+                and learning journey.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="https://github.com/ashaiftech"
+               target="_blank">View GitHub ↗</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATES -->
+<section class="certificates section" id="certificates">
+
+    <div class="section-heading reveal">
+        <p>MY ACHIEVEMENTS</p>
+        <h2>Certificates & <span>Recognition.</span></h2>
+    </div>
+
+    <div class="certificates-grid">
+
+        <div class="certificate-card reveal">
+            <img src="images/certificate1.jpg" alt="Certificate 1">
+            <h3>Certificate 01</h3>
+            <p>Learning & Achievement</p>
+        </div>
+
+        <div class="certificate-card reveal">
+            <img src="images/certificate2.jpg" alt="Certificate 2">
+            <h3>Certificate 02</h3>
+            <p>Learning & Achievement</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+
+    <div class="contact-container reveal">
+
+        <p class="small-heading">LET'S CONNECT</p>
+
+        <h2>
+            Have an idea?<br>
+            <span>Let's build it.</span>
+        </h2>
+
+        <p>
+            I'm always interested in learning,
+            exploring new technologies and connecting
+            with people who love building things.
+        </p>
+
+        <a href="mailto:ashaifkhan515@gmail.com"
+           class="gold-button">Get In Touch ↗</a>
+
+        <div class="social-links">
+
+            <a href="https://github.com/ashaiftech"
+               target="_blank">GitHub ↗</a>
+
+            <a href="mailto:ashaifkhan515@gmail.com">
+                Email ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <a href="#home" class="logo">ASHAIF<span>.</span></a>
+
+    <p>
+        Designed & Built by Mohd Ashaif ©
+        <span id="year"></span>
+    </p>
+
+    <a href="#home">Back to Top ↑</a>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
